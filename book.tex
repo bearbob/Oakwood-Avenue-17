@@ -1,0 +1,102 @@
+% COYA-LaTeX-Template
+% Version 1.0.0
+% Diese Datei muss kaum angepasst werden - wenn ihr eine neue Content-Datei hinzufügt, muss sie
+% im Bereich zwischen "INHALT Start" und "INHALT Ende" eingefügt werden.
+
+% Changing book to article will make the footers match on each page,
+% rather than alternate every other.
+%
+% Note that the article class does not have chapters.
+\documentclass[12pt,twoside,openany,twocolumn]{book}
+\usepackage[a4paper]{geometry} % was a5paper before
+\usepackage[layout=true]{dnd}
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{nameref}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage[bottom]{footmisc}
+\usetikzlibrary{shapes.arrows, fadings}
+\usepackage{titlesec}
+
+
+\setlength{\parskip}{1em}
+
+%custom commands
+\tikzfading[name=fade right,
+  left color=transparent!0, right color=transparent!100]
+
+\newcommand{\magic}[1]{
+\noindent
+\begin{tikzpicture}
+% Background
+\fill [uppergold,path fading=fade right] (\linewidth,1.6em) rectangle (-0.2,0) ;
+\node[anchor=west,xshift=0, yshift=0.7em,rectangle, inner sep=11pt] {\color{black} \large \textsc{#1}};
+\draw[line width=0.2 mm] (-0.2,0.57) -- (8.5,0.57);
+\end{tikzpicture}
+}
+
+\newcounter{jumpmarker} \setcounter{jumpmarker}{0}
+\renewcommand{\thejumpmarker}{\arabic{jumpmarker}}
+
+\newcommand{\block}[2]{
+  \refstepcounter{jumpmarker}
+  \paragraph [\thejumpmarker]{\thejumpmarker\ - #2} % with headline
+  %\paragraph [\arabic{jumpmarker}]{\arabic{jumpmarker}} % without headline
+  \label{#1}
+}
+
+\newcounter{itemmarker} \setcounter{itemmarker}{0}
+\renewcommand{\theitemmarker}{\arabic{itemmarker}}
+
+\newcommand{\inventory}[1]{
+  \refstepcounter{itemmarker}
+  G\theitemmarker
+  \label{#1}
+}
+
+\newcommand{\getItem}[1]{(G\ref{#1})}
+
+\newcounter{eventmarker} \setcounter{eventmarker}{0}
+\renewcommand{\theeventmarker}{\arabic{eventmarker}}
+\newcommand{\setEvent}[1]{
+  \refstepcounter{eventmarker}(E\theeventmarker)
+  \label{#1}
+}
+
+\newcommand{\getEvent}[1]{(E\ref{#1})}
+
+\newcommand{\goto}[1]{[\ref{#1}]}
+
+%----------------------------- Start document -----------------------------
+\begin{document}
+\fontfamily{ppl}\selectfont % Set text font
+
+% Front page
+\begin{titlepage}
+    \centering
+    \null
+    \vfill
+    \vfill
+    \includegraphics[width=\textwidth]{img/cover_title} % also works with logo.pdf
+    \vfill
+    \vfill
+    \includegraphics[width=\textwidth]{img/cover_author} % also works with logo.pdf
+\end{titlepage}
+\newpage
+\input{content/bestarium}
+
+% Actual content is placed here (in order)
+% INHALT Start
+\input{content/intro}
+\input{content/content_example}
+% INHALT Ende
+
+\onecolumn
+\input{content/appendix}
+
+% End document
+\end{document}

@@ -1,0 +1,38 @@
+\newcommand{\setMonsterText}{
+  \setlength{\parskip}{0em}
+  \scriptsize
+}
+\newcommand{\resetMonsterText}{
+  \setlength{\parskip}{1em}
+  \normalsize
+}
+
+\newcommand{\monsterSpider}[3]{
+  \setMonsterText
+  \begin{monsterbox}{\normalsize Riesige Wolfsspinne}
+    \begin{hangingpar}
+      \textit{Auch wenn Wolfsspinnen kleiner als die großen Netzspinnen sind, ist ihre Länge von fast 2 Metern furchteinflößend! Sie nutzen ihre Netze nur als Versteck und jagen ihre Beute selbst.}
+    \end{hangingpar}
+    \dndline%
+    Die Spinne versucht immer wieder dich mit ihren Greifarmen zu packen und zu beißen!
+    Wirf je eine Probe auf Stärke, Geschicklichkeit und Konstitution mit DC 16.
+    Wenn du mindestens zwei der drei Proben bestehst, gehe zu \goto{#1}.
+    Wenn du nur eine Probe bestehst, gehe zu \goto{#2} und wenn du keine Probe bestehst, gehe zu \goto{#3}.
+  \end{monsterbox}
+  \resetMonsterText
+}
+
+\newcommand{\monsterWarlock}[2]{
+  \setMonsterText
+  \begin{monsterbox}{\normalsize Der Hexer}
+    \begin{hangingpar}
+      \textit{Der alte Hexer hat einen irren Blick - er ist niemand, mit dem man reden kann. Du bist dir sicher, dass er mit aller Kraft versuchen wird dich umzubringen!}
+    \end{hangingpar}
+    \dndline%
+    Immer wieder wirft der Hexer Blitze aus grünem Licht nach dir und zückt seinen Dolch, wenn du ihm zu nahe kommst.
+    Wirf je eine Probe auf Stärke (DC 14), Geschicklichkeit (DC 16) und Charisma (DC 15).
+    Wenn du mindestens zwei der drei Proben bestehst, gehe zu \goto{#1}.
+    Wenn du nur eine Probe oder weniger bestehst, gehe zu \goto{#2}.
+  \end{monsterbox}
+  \resetMonsterText
+}
