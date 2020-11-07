@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://github.com/bearbob/Oakwood-Avenue-17">
-    <img src="img/repo-cover.jpg" alt="Logo" width="85" height="85">
+    <img src="img/repo_cover.jpg" alt="Logo" width="700">
   </a>
 
   <h3 align="center">Oakwood Avenue 17</h3>
