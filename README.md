@@ -1,3 +1,22 @@
+<!-- PROJECT LOGO -->
+<p align="center">
+  <a href="https://github.com/bearbob/Oakwood-Avenue-17">
+    <img src="img/repo-cover.jpg" alt="Logo" width="85" height="85">
+  </a>
+
+  <h3 align="center">Oakwood Avenue 17</h3>
+
+  <p align="center">
+    A german adventure where you choose what comes next!
+    <br />
+    <a href="https://github.com/bearbob/Oakwood-Avenue-17/wiki"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/bearbob/Oakwood-Avenue-17/issues/new">Report Bug</a>
+    ·
+    <a href="https://github.com/bearbob/Oakwood-Avenue-17/issues">Request Feature</a>
+  </p>
+</p>
 # COYA Latex Template
 
 Dieses Template soll einen einfachen Weg zeigen, um eigene Abenteuer im Choose-Your-Own-Adventure-Stil zu entwerfen - ohne zu viel Zeit mit dem Setup zu verschwenden.
