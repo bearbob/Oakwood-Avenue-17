@@ -7,7 +7,7 @@
   <h3 align="center">Oakwood Avenue 17</h3>
 
   <p align="center">
-    A german adventure where you choose what comes next!
+    A german mystery-horror adventure where you choose what comes next!
     <br />
     <a href="https://github.com/bearbob/Oakwood-Avenue-17/wiki"><strong>Explore the docs »</strong></a>
     <br />
@@ -17,12 +17,11 @@
     <a href="https://github.com/bearbob/Oakwood-Avenue-17/issues">Request Feature</a>
   </p>
 </p>
-# COYA Latex Template
 
-Dieses Template soll einen einfachen Weg zeigen, um eigene Abenteuer im Choose-Your-Own-Adventure-Stil zu entwerfen - ohne zu viel Zeit mit dem Setup zu verschwenden.
-Mit Hilfe einfacher Definitionen in LaTeX und dem großartigen Template [rpgtex/DND-5e-LaTeX-Template](https://github.com/rpgtex/DND-5e-LaTeX-Template) wird ein kurzes Abenteuer beschrieben.
+Dunkle Gerüchte ranken sich um das Haus in der Oakwood Avenue 17. In der kleinen Stadt hat jede Familie eine eigene Version der Geschichte, die dort passiert sein soll. Auf einem alten Friedhof erbaut, vom Geist seines Erbauers heimgesucht, von einer Hexe verflucht, die Auswahl ist groß. Fest steht, dass dort dunkle Dinge vor sich gehen und man sich lieber fernhält. 
+Das gilt aber nicht für dich, denn dein neuer Job fordert von dir genau das - den Weg durch die staubverhangenen Zimmer. Ob es hier wirklich spukt, wirst du schon noch herausfinden...
 
-## Hilfsdefinitionen
+## Markos
 
 ### \block{<Name_des_Markers>}{<Überschift>}
 
@@ -51,3 +50,7 @@ Erzeugt eine neuen Zielreferenz für eine Ereignisbeschreibung.
 
 Erzeugt eine neue Referenz auf eine Ereignisbeschreibung, die mit `\setEvent{..}` erzeugt wurde.
 Im Text wird der Buchstabe 'E' und die Nummer des referenzierten Gegenstands ausgegeben, z.B. `E4`.
+
+# Credits
+
+* [rpgtex/DND-5e-LaTeX-Template](https://github.com/rpgtex/DND-5e-LaTeX-Template)
